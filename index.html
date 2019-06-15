@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>医疗废物倾倒案——桂环环的环保普法讲堂</title>
+    <link rel="stylesheet" href="css/fullpage.css">
+    <link rel="stylesheet" href="css/index.css">
+</head>
+<body>
+    <div id="fullpage">
+        <div class="section section1">
+            <img class="title" src="images/title.png" alt="桂环环的环保普法讲堂">
+            <img class="cartoon" src="images/cartoon(1).png" alt="卡通人物">
+        </div>
+        <div class="section section2">
+             <!-- <img class="page1-bg" src="images/page1-bg.jpg" alt="背景"> -->
+             <img class="sub-title" src="images/sub-title.png" alt="医疗废物倾倒案">
+           
+        </div>
+        <div class="section section3">
+            <img src="images/page2.jpg" alt="" srcset="">
+        </div>
+        <div class="section section4">
+            <img src="images/page3.jpg" alt="" srcset="">
+        </div>
+        <div class="section section5">
+            <img src="images/page4.jpg" alt="" srcset="">
+        </div>
+        <div class="section section6">
+            <img src="images/page5.jpg" alt="" srcset="">
+        </div>
+        <div class="section section7">
+            <img src="images/page6.jpg" alt="" srcset="">
+        </div>
+        <div class="section section8">
+            <img class="page7-bg" src="images/page7.jpg" alt="" srcset="">
+            <img class="end-title" src="images/end-title.png" alt="" srcset="">
+            <img class="slogen" src="images/slogen.png" alt="" srcset="">
+            
+        </div>
+    </div>
+
+   <script src="js/jquery-1.11.0.min.js"></script>
+      <script src="js/move.js"></script>
+    <script src="js/fullpage-2.7.9.js"></script>
+    <script >
+       $(document).ready(function() {
+            $('#fullpage').fullpage({
+                anchors:['page1','page2','page3','page4','page5','page6','page7','page8'],
+                // sectionsColor: ['yellow', 'orange', '#C0C0C0', '#ADD8E6','#fb7b35'],
+                // loopBottom: true,
+                // loopTop: true,
+                loopHorizontal: true,
+                continuousVertical: true, 
+                licenseKey:'OPEN-SOURCE-GPLV3-LICENSE',
+                verticalCentered:true,
+                navigation:false,
+                afterLoad:function(anchors,index){
+                    // var t = origin.eq();
+                    // console.log(t);
+                    switch(index){
+                        case 1:
+                            move('.title').scale(1.2).delay(0).end();//move获取元素不能含多个选择器，否则报错
+                          break;
+                        case 2:
+                            move('.sub-title').set("left","0").delay(0).end();
+                          break;
+                        case 3:
+                          break;
+                        case 4:
+                          break;
+                        case 5:
+                          break;
+                        case 6:
+                          break;
+                        case 7:
+                          break;
+                        case 8:
+                            move('.end-title').scale(0.9).delay(0).end();
+                            move('.slogen').scale(1.1).delay(500).end();
+                          break;
+                    }
+                },
+
+                onLeave:function(link,index){
+                    switch(index){
+                        case 1:
+                            move('.title').scale(1).end();
+                          break;
+                        case 2:
+                            move('.sub-title').set("left","22rem").end();
+                        break;
+                        case 3:
+                          break;
+                        case 4:
+                          break;
+                        case 5:
+                          break;
+                        case 6:
+                          break;
+                        case 7:
+                          break;
+                        case 8:
+                            move('.end-title').scale(1).end();
+                            move('.slogen').scale(1).end();
+                        break;
+                    }
+                },
+
+                afterRender:function(){},
+            });
+
+            
+        
+        });
+    </script>
+</body>
+</html>
