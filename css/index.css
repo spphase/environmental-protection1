@@ -1,0 +1,68 @@
+body,div,section,a,h1,h2,h3,h4,h5,img,hr{
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    width: 100%;
+    height: 100%;
+}
+
+img {
+    max-width: 100%;
+    /* max-height: 100%; */
+}
+
+.section1 {
+    position: relative;
+    display: flex;
+    flex-direction: row-reverse; 
+    background-image: linear-gradient(to top, #e4effc 0%, #accef6 100%);
+    max-height: 100%;
+}
+
+.section1 .title {
+    position: absolute;
+    top: 4rem;
+    transform: scale(1, 1);
+    z-index: 5;
+}
+
+.section1 .cartoon {
+    position: relative;
+    transform: scale(0.9);
+    border: solid #000 4px;
+    box-shadow: 1px 1px 1px 1px rgba(127, 127, 133, 0.589);
+}
+
+.section2 {
+    background: url(../images/page1-bg.jpg) no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
+.section2 .sub-title {
+    position: absolute;
+    top: 5rem;
+    left: 22rem;
+}
+
+.section2 .page1-bg {
+    position: absolute;
+}
+
+.section8 .end-title {
+    position: absolute;
+    top: 5rem;
+}
+
+.section8 .slogen {
+    position: absolute;
+    top: 14rem;
+}
+
+.section8 .page7-bg{
+    position: absolute;
+    top: 0;
+}
+
