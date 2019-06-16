@@ -16,28 +16,28 @@
         </div>
         <div class="section section2">
              <!-- <img class="page1-bg" src="images/page1-bg.jpg" alt="背景"> -->
-             <img class="sub-title" src="images/sub-title.png" alt="医疗废物倾倒案">
+             <img class="sub-title" data-src="images/sub-title.png" alt="医疗废物倾倒案">
            
         </div>
         <div class="section section3">
-            <img src="images/page2.jpg" alt="" srcset="">
+            <img data-src="images/page2.jpg" alt="" srcset="">
         </div>
         <div class="section section4">
-            <img src="images/page3.jpg" alt="" srcset="">
+            <img data-src="images/page3.jpg" alt="" srcset="">
         </div>
         <div class="section section5">
-            <img src="images/page4.jpg" alt="" srcset="">
+            <img data-src="images/page4.jpg" alt="" srcset="">
         </div>
         <div class="section section6">
-            <img src="images/page5.jpg" alt="" srcset="">
+            <img data-src="images/page5.jpg" alt="" srcset="">
         </div>
         <div class="section section7">
-            <img src="images/page6.jpg" alt="" srcset="">
+            <img data-src="images/page6.jpg" alt="" srcset="">
         </div>
         <div class="section section8">
-            <img class="page7-bg" src="images/page7.jpg" alt="" srcset="">
-            <img class="end-title" src="images/end-title.png" alt="" srcset="">
-            <img class="slogen" src="images/slogen.png" alt="" srcset="">
+            <img class="page7-bg" data-src="images/page7.jpg" alt="" srcset="">
+            <img class="end-title" data-src="images/end-title.png" alt="" srcset="">
+            <img class="slogen" data-src="images/slogen.png" alt="" srcset="">
             
         </div>
     </div>
@@ -45,6 +45,7 @@
    <script src="js/jquery-1.11.0.min.js"></script>
       <script src="js/move.js"></script>
     <script src="js/fullpage-2.7.9.js"></script>
+    <script src="js/lazy-load&scrollup.js"></script>
     <script >
        $(document).ready(function() {
             $('#fullpage').fullpage({
@@ -62,7 +63,7 @@
                     // console.log(t);
                     switch(index){
                         case 1:
-                            move('.title').scale(1.2).delay(0).end();//move获取元素不能含多个选择器，否则报错
+                            move('.title').scale(1.2).delay(0).end();//move获取元素含多个选择器会报错，未知问题
                           break;
                         case 2:
                             move('.sub-title').set("left","0").delay(0).end();
