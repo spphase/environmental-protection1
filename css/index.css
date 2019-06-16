@@ -1,0 +1,161 @@
+body,div,section,a,h1,h2,h3,h4,h5,img,hr{
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    width: 100%;
+    height: 100%;
+}
+
+img {
+    max-width: 100%;
+    /* max-height: 100%; */
+}
+
+.loading {
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    background-color: #0000004f;
+}
+
+.spinner {
+    width: 60px;
+    height: 60px;
+    text-align: center;
+    font-size: 10px;
+    position: relative;
+    top: 45%;
+    left: 50%;
+  }
+  
+  .spinner > div {
+    background-color: #4f55ae;
+    height: 100%;
+    width: 6px;
+    display: inline-block;
+    
+    -webkit-animation: sk-stretchdelay 1.2s infinite ease-in-out;
+    animation: sk-stretchdelay 1.2s infinite ease-in-out;
+  }
+  
+  .spinner .rect2 {
+    -webkit-animation-delay: -1.1s;
+    animation-delay: -1.1s;
+  }
+  
+  .spinner .rect3 {
+    -webkit-animation-delay: -1.0s;
+    animation-delay: -1.0s;
+  }
+  
+  .spinner .rect4 {
+    -webkit-animation-delay: -0.9s;
+    animation-delay: -0.9s;
+  }
+  
+  .spinner .rect5 {
+    -webkit-animation-delay: -0.8s;
+    animation-delay: -0.8s;
+  }
+
+  @-webkit-keyframes sk-stretchdelay {
+    0%, 40%, 100% { -webkit-transform: scaleY(0.4) }  
+    20% { -webkit-transform: scaleY(1.0) }
+  }
+  
+  @keyframes sk-stretchdelay {
+    0%, 40%, 100% { 
+      transform: scaleY(0.4);
+      -webkit-transform: scaleY(0.4);
+    }  20% { 
+      transform: scaleY(1.0);
+      -webkit-transform: scaleY(1.0);
+    }
+  }
+
+.section {
+    width: 100%;
+    height: 100vh;
+}
+
+.section1 {
+    position: relative;
+    display: flex;
+    flex-direction: row-reverse; 
+    background-image: linear-gradient(to top, #e4effc 0%, #accef6 100%);
+    max-height: 100%;
+}
+
+.section1 .title {
+    position: absolute;
+    top: 4rem;
+    transform: scale(1, 1);
+    z-index: 5;
+}
+
+.section1 .cartoon {
+    position: relative;
+    /* transform: scale(0.9); */
+    /* border: solid #000 4px; */
+    box-shadow: 1px 1px 1px 1px rgba(127, 127, 133, 0.589);
+}
+
+.section2 {
+    background: url(../images/page1-bg.jpg) no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
+.section2 .sub-title {
+    position: absolute;
+    top: 5rem;
+    left: 22rem;
+}
+
+.section2 .page1-bg {
+    position: absolute;
+}
+
+.section8 .end-title {
+    position: absolute;
+    top: 5rem;
+}
+
+.section8 .slogen {
+    position: absolute;
+    top: 14rem;
+}
+
+.section8 .page7-bg{
+    position: absolute;
+    top: 0;
+}
+
+#bg_music_btn {
+    position: fixed;
+    right: 15%;
+    top: 12rem;
+    z-index: 50;
+    visibility: visible;
+}
+
+#music_btn {
+	position: fixed;
+	z-index: 50;
+}
+
+@-webkit-keyframes rotation{
+    from {-webkit-transform: rotate(0deg);}
+    to {-webkit-transform: rotate(360deg);}
+}
+
+.Rotation {
+     -webkit-transform: rotate(360deg);
+     animation: rotation 3s linear infinite;
+     -moz-animation: rotation 3s linear infinite;
+     -webkit-animation: rotation 3s linear infinite;
+     -o-animation: rotation 3s linear infinite;
+     animation-play-state:paused;
+}
