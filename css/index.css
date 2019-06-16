@@ -30,7 +30,7 @@ img {
 
 .section1 .cartoon {
     position: relative;
-    transform: scale(0.9);
+/*     transform: scale(0.9); */
     border: solid #000 4px;
     box-shadow: 1px 1px 1px 1px rgba(127, 127, 133, 0.589);
 }
